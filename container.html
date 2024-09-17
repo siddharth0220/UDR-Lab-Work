@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #container{
+        display:flex;
+        justify-content: space-around;
+    }
+    #container>div{
+        height: 5em;
+        width: 5em;
+        background-color: orange;
+    }
+</style>
+<body>
+    <div id="container"></div>
+    <script>
+        let container = document.getElementById('container');
+        for(let i = 0; i < 5; i++){
+            let div = document.createElement('div');
+            div.onclick = function(index) {
+                return function() {
+                    alert("this is box no" + index);
+                }
+            }(i);
+            container.appendChild(div);
+        }
+    </script>
+</body>
+</html>
+wap to find the factorial of a number using arrow function
+perimeter of a circle HAVING RADIUS 15M USIG ARROW FUNCTION
+WAP using arrow funcion to generate fibonacci series for first 7 terms
+wap to find the sum of factors of a given 5 digit number using function as an expression
+wap to filter the prime numbres between 150-250 range  using function as an expression
+wap using function to find the gcd and LCM of two given natural number using function

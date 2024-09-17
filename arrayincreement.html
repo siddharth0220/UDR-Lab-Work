@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const arr = [1001,1051,2050,3031,4095];
+console.log(arr)
+const incFunc = (num) => {
+    return num+101
+}
+
+const evenFunc = (num) => {
+    return num%2 === 0
+}
+
+const newArr = arr.map(incFunc)
+console.log(newArr)
+const evenArr = newArr.filter(evenFunc);
+console.log(evenArr)
+
+const [first,,,last] = evenArr;
+console.log(first, last)
+    </script>
+</body>
+</html>

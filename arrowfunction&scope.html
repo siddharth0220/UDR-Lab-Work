@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+ const tahoe = {
+  maintains: ["Siddharth", "Kumar", "Pradhan", "Gold", "Silver"],
+  print: function(delay = 100) {
+    setTimeout(function() {
+      for (let i = 0; i < this.maintains.length; i++) {
+        console.log(this.maintains[i]);
+      }
+    }.bind(this), delay);
+  }
+};
+tahoe.print();
+    </script>
+</body>
+</html>
